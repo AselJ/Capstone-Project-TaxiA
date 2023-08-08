@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>TaxiA</title>
+  <link rel="stylesheet" href="./styles.css" type="text/css"/>
+  
+</head>
+<body>
+  <header>
+  <h1>TaxiA</h1>
+  <h1>Welcome Admin</h1>
+</header>
+<main>
+    <div id="drivers">
+      <h3>Drivers</h3>
+      <!-- Content will be generated from JS -->
+      <div id="drivers-list"></div>
+    </div>
+    <div id="registration">
+      <div class="card">
+        <div class="card-header register-header">
+            <h5>Add a Driver</h5>
+            <img src="https://static.thenounproject.com/png/509406-200.png" alt="">
+        </div>
+        <div class="card-body">
+            <p>To drive with TaxiA, you need a valid driver's license</p>
+            <form id="driverForm">
+                <input type="text" id="firstName" name="firstName" placeholder="First Name">
+                <input type="text" id="lastName" name="lastName" placeholder="Last Name">
+                <input type="number" id="dob" name="dob" placeholder="Date of Birth">
+                <input type="text" id="email" name="email" placeholder="Email">
+                <input type="text" id="password" name="password" placeholder="Create Password">
+                <input type="text" id="driverLicense" name="driverLicense" placeholder="Driver License">
+                <button>Register Driver</button>
+            </form>
+        </div>
+      </div> 
+      <div class="card">
+        <div class="card-header register-header">
+            <h5>Add a Vehicle</h5>
+            <img src="https://icon-library.com/images/white-car-icon/white-car-icon-16.jpg" alt="">
+        </div>
+        <div class="card-body">
+            <p>To drive with TaxiA, you need a vehicle that is 2007 or newer, and not salvaged.</p>
+            <form id="vehicleForm">
+                <input type="text" id="make" name="make" placeholder="Make">
+                <input type="text" id="model" name="model" placeholder="Model">
+                <input type="number" id="year" name="year" placeholder="Year" min="2007">
+                <input type="text" id="color" name="color" placeholder="Color">
+                <button>Add my vehicle</button>
+            </form>
+        </div>
+      </div> 
+    </div>
+</main>
+<script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+<script src="index.js"></script> 
+</body>
+</html>

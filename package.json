@@ -1,0 +1,31 @@
+{
+  "name": "capstone-project-taxia",
+  "version": "1.0.0",
+  "description": "capstone-project-taxia",
+  "main": "server/server.js",
+  "scripts": {
+    "test": "jest",
+    "start": "npm-run-all -p nodemon browser-sync",
+    "nodemon": "nodemon server.js",
+    "browser-sync": "browser-sync start --proxy localhost:4000 --files=**/*  --ignore=node_modules --reload-delay 10000 --no-ui"
+  },
+  "repository": {
+    "type": "git",
+    "url": "temp"
+  },
+  "keywords": [
+    "taxi",
+    "app",
+    "admin"
+  ],
+  "author": "Asel Orozaly",
+  "license": "ISC",
+  "dependencies": {
+    "body-parser": "^1.20.2",
+    "browser-sync": "^2.29.3",
+    "cors": "^2.8.5",
+    "express": "^4.18.2",
+    "npm-run-all": "^4.1.5",
+    "uuid": "^9.0.0"
+  }
+}
