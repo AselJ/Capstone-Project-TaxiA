@@ -81,3 +81,12 @@ footer {
 .select-vehicle-message {
   font-size: 13px;
 }
+
+.primary-btn {
+  background-color: #007bff;
+  color: white;
+}
+.danger-btn {
+  background-color: #dc3545;
+  color: white;
+}

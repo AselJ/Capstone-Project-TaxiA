@@ -113,7 +113,7 @@ const createDriversCard = (driver) => {
   `
   <div class="card-header">
     <h5>${driver.first_name} ${driver.last_name}</h5>
-    <button onClick="deleteDriver(${driver.driver_id})">Delete Driver</button>
+    <button onClick="deleteDriver(${driver.driver_id})" class="danger-btn">Delete Driver</button>
   </div>
   <div class="card-body">
     <p>Email: <span>${driver.email}</span></p>
@@ -147,8 +147,8 @@ const createVehicleList = vehicle => {
               <span>${vehicle.color}</span>
             </p>
             <div>
-              <button onclick="selectVehicle(${vehicle.driver_id}, ${vehicle.vehicle_id})">${selectVehicleText}</button>
-              <button onclick="deleteVehicle(${vehicle.driver_id}, ${vehicle.vehicle_id})">Delete Vehicle</button>
+              <button onclick="selectVehicle(${vehicle.driver_id}, ${vehicle.vehicle_id})" class="primary-btn">${selectVehicleText}</button>
+              <button onclick="deleteVehicle(${vehicle.driver_id}, ${vehicle.vehicle_id})" class="danger-btn">Delete Vehicle</button>
             </div>
         </div>
         `
