@@ -26,8 +26,8 @@ module.exports = {
     const insertDriversQuery = `
         INSERT INTO drivers(first_name, last_name, dob, email, driver_license)
         VALUES 
-        ('Janatbek', 'Orozaly', '08/02/1986', 'janatbek@gmail.com', 'abc37'),
-        ('Asel', 'Orozaly', '09/12/1984', 'asya8427@gmail.com', 'xyz'),
+        ('Jeremy', 'Guin', '08/02/1986', 'jeremy.guin@gmail.com', 'IL123456P'),
+        ('Asel', 'Orozaly', '09/12/1984', 'asya8427@gmail.com', 'ZI154325L'),
         ('John', 'Doe','03/30/1989', 'john@example.com', 'DL123456');
     `
     const insertVehicleQuery = `

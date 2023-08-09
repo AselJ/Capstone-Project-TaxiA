@@ -19,7 +19,7 @@ const addDriver = event => {
     const driver = result.data[0];
     const vehicle = buildVehicleBody();
     // get driver's id from driver result and assign it to vehicle
-    vehicle.driver_id = driver.driver_id;
+    vehicle.driverId = driver.driver_id;
 
     axios.post(`${baseUrl}/api/vehicles`, vehicle).then(result => {
         console.log(result.data[0]);
