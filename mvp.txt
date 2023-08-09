@@ -1,0 +1,60 @@
+MVP
+app has at least 3 main features *
+front end makes a request to the server and handles the response *
+  1. get all drivers
+  2. get all vehicles
+  3. add driver with vehicle
+  4. add vehicle
+  5. edit vehicle
+  6. delete vehicle
+  7. delete driver
+
+front end is interactive *
+  - all form events handled with Javascript. 
+app has custom styling *
+  - styled all cards and semantic elements
+
+Front End
+app has at least 5 semantic tags *
+  - header, main, footer, aside and section
+app includes 1 view *
+  - main admin view
+app includes 1+ additional view(s)
+styling includes flexbox 
+  - using flexbox to the cards, and card headers
+at least 1 view is responsive
+styling includes animations
+
+Server
+app includes a GET endpoint and handler function *
+  - 2 get endpoints
+app includes a POST endpoint and handler function *
+  - 2 post endpoints
+app includes a PUT endpoint and handler function
+  - 1 put endpoint 
+app includes a DELETE endpoint and handler function
+  - 2 delete endpoints
+app utilizes Sequelize
+  using sequilize
+project includes at least 1 controller file
+  - 2 controllers
+
+Database
+project includes a seed file or function
+  - includes seed file and function
+app uses 1 table
+  - has driver table 
+app uses 1+ additional tables
+  - has vehicle table
+app uses a foreign key and join
+  - uses driver_id as FK. 
+
+Presentation
+discusses project purpose and demonstrates MVP *
+  - as doordash driver and I had an issue with adding a vehicle to my profile, 
+  - as turo host I also had issues with listing a vehicle. 
+  I used to call service desk and ask for help to add my vehicle. 
+  My idea of building this application, is coming from my own experience. 
+  I always thought what kind of software support uses. and I immagined, they have similar view that my application has to manage drivers and vehicles. 
+  In My application, you can add vehicles, add drivers, and manage their vehicle as selected. 
+
