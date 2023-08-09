@@ -1,0 +1,17 @@
+Postgresql notes.
+* used CASCADE in drop table drivers CASCADE; to drop tables with foreign key. 
+* sql statements in seed were not running because I wasn't terminating each statement with semicolon. 
+* created sequilize file so I can setup database once and use it in controller files. 
+
+Server Notes
+* used console.log on request body to see what are the properties of request object. so I can insert correct values. 
+* I started using request, response variable names instead of req, res becouse it's more descriptive
+
+Client Notes
+  - Javascript
+    * issue: body is undefined
+    * solution: didn't declare variable body, instead I passed vehicle object. and problem solved.  
+  - HTML
+    * used required attribute on inputs to validate form. 
+  - CSS
+    * drivers cards were overlapping over form, used flex-flow: wrap to solve this issue. 

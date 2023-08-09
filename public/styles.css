@@ -11,7 +11,7 @@ html {
   height: 100%;
   width: 100%;
 }
-main {
+.container {
   width: 100%;
   padding: 10px;
   display: flex;
@@ -21,26 +21,39 @@ main {
 }
 #drivers-list {
   display: flex;
+  flex-flow: wrap;
 }
 
 .card {
   border: 1px solid gray;
   border-radius: 15px;
   width: 350px;
-  padding: 5px;
   margin: 10px;
 }
 .card-header {
   border-bottom: 1px solid red;
+  padding: 10px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.card-body{
+  padding: 10px;
+}
+.card-footer {
+  border-top: 1px solid red;
   padding: 5px;
 }
+
 .register-header {
   display: flex;
   justify-content: space-around;
   align-items: center;
+  padding: 5px;
 }
 .register-header img {
-  width: 40px;
+  width: 20px;
+  margin-left: 5px;
 }
 .vehicle-list li {
   padding: 5px;
@@ -48,4 +61,23 @@ main {
   border: 1px solid;
   border-radius: 5px;
   margin-bottom: 5px;
+}
+
+input, button, select {
+  margin: 5px;
+  padding: 3px;
+  border-radius: 5px;
+}
+
+footer {
+  position: fixed;
+  bottom: 0;
+  border-top: 1px solid;
+  width: 100%;
+  padding: 20px;
+  text-align: center;
+  color: red;
+}
+.select-vehicle-message {
+  font-size: 13px;
 }

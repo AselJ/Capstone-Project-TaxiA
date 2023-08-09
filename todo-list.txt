@@ -1,0 +1,6 @@
+* add delete driver functionality.  done
+* add capitalize first letter before saving to database. 
+* add delete vehicle functionality. done
+* work on styling. 
+* add driver only application. maybe for second capstone project. 
+* add vehicle for specific driver. done

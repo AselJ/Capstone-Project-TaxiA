@@ -8,54 +8,74 @@
   
 </head>
 <body>
-  <header>
-  <h1>TaxiA</h1>
-  <h1>Welcome Admin</h1>
+<header>
+  <h1>Welcome to Taxi App, Admin</h1>
 </header>
-<main>
-    <div id="drivers">
+<div class="container">
+    <main id="drivers">
       <h3>Drivers</h3>
       <!-- Content will be generated from JS -->
       <div id="drivers-list"></div>
-    </div>
-    <div id="registration">
+    </main>
+    <aside id="registration">
       <div class="card">
-        <div class="card-header register-header">
-            <h5>Add a Driver</h5>
-            <img src="https://static.thenounproject.com/png/509406-200.png" alt="">
+        <div class="card-header">
+          <h3>Register Driver and Vehicle</h3>
         </div>
         <div class="card-body">
-            <p>To drive with TaxiA, you need a valid driver's license</p>
-            <form id="driverForm">
-                <input type="text" id="firstName" name="firstName" placeholder="First Name">
-                <input type="text" id="lastName" name="lastName" placeholder="Last Name">
-                <input type="number" id="dob" name="dob" placeholder="Date of Birth">
-                <input type="text" id="email" name="email" placeholder="Email">
-                <input type="text" id="password" name="password" placeholder="Create Password">
-                <input type="text" id="driverLicense" name="driverLicense" placeholder="Driver License">
-                <button>Register Driver</button>
-            </form>
+          <form action="" id="register-driver">
+            <fieldset>
+              <legend class="register-header">
+                <h5>Add a Driver</h5>
+                <img src="https://static.thenounproject.com/png/509406-200.png" alt="">
+              </legend>
+              <input type="text" id="firstName" name="firstName" placeholder="First Name" required>
+              <input type="text" id="lastName" name="lastName" placeholder="Last Name" required>
+              <input type="date" id="dob" name="dob" placeholder="Date of Birth" required>
+              <input type="email" id="email" name="email" placeholder="Email" required>
+              <input type="text" id="driverLicense" name="driverLicense" placeholder="Driver License" required>
+            </fieldset>
+            <fieldset>
+              <legend class="register-header">
+                <h5>Add a Vehicle </h5>
+                <img src="https://icon-library.com/images/white-car-icon/white-car-icon-16.jpg" alt=""> 
+              </legend>
+              <input type="text" id="vehicle-make" name="make" placeholder="Make" required>
+              <input type="text" id="vehicle-model" name="model" placeholder="Model" required>
+              <input type="number" id="vehicle-year" name="year" placeholder="Year" min="2007" required>
+              <input type="text" id="vehicle-color" name="color" placeholder="Color" required>
+            </fieldset>
+            <button>Register Driver</button>
+          </form>
         </div>
-      </div> 
+      </div>
       <div class="card">
-        <div class="card-header register-header">
-            <h5>Add a Vehicle</h5>
-            <img src="https://icon-library.com/images/white-car-icon/white-car-icon-16.jpg" alt="">
+        <div class="card-header">
+          <h5>Add a Vehicle for a Driver</h5>
         </div>
         <div class="card-body">
-            <p>To drive with TaxiA, you need a vehicle that is 2007 or newer, and not salvaged.</p>
-            <form id="vehicleForm">
-                <input type="text" id="make" name="make" placeholder="Make">
-                <input type="text" id="model" name="model" placeholder="Model">
-                <input type="number" id="year" name="year" placeholder="Year" min="2007">
-                <input type="text" id="color" name="color" placeholder="Color">
-                <button>Add my vehicle</button>
-            </form>
+          <form id="vehicle-form">
+            <fieldset>
+              <legend class="register-header">
+                <h5>Add a Vehicle for a Driver</h5>
+                <img src="https://icon-library.com/images/white-car-icon/white-car-icon-16.jpg" alt=""> 
+              </legend>
+              <select name="driverId" id="driverId"></select> <br>
+              <input type="text" id="make" name="make" placeholder="Make" required> <br>
+              <input type="text" id="model" name="model" placeholder="Model" required> <br>
+              <input type="number" id="year" name="year" placeholder="Year" min="2007" required> <br>
+              <input type="text" id="color" name="color" placeholder="Color" required> <br>
+            </fieldset>
+            <button>Add a Vehicle for a Driver</button>
+          </form>
         </div>
-      </div> 
-    </div>
+      </div>
+    </aside>
 </main>
 <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
 <script src="index.js"></script> 
+<footer>
+  <p>Author: Asel Orozaly</p>
+</footer>
 </body>
 </html>
