@@ -21,7 +21,8 @@ module.exports = {
         year INT NOT NULL,
           color VARCHAR(50) NOT NULL,
           isSelected BOOLEAN
-    );`
+    );
+    `
     const insertDriversQuery = `
         INSERT INTO drivers(first_name, last_name, dob, email, driver_license)
         VALUES 
@@ -35,7 +36,7 @@ module.exports = {
       (1, 'Honda', 'Civic', 2018, 'Blue', false),
       (1, 'Lexus', 'GX 460', 2010, 'White', false),
       (2, 'Toyota', 'Camry', 2022, 'Green', false);
-      `
+    `
     sequelize.query(
       `
       drop table drivers CASCADE;
