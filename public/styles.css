@@ -5,6 +5,13 @@
 }
 body {
   font-family: Arial, sans-serif;
+ 
+}
+h1{
+  text-align: center;
+}
+h3{
+  text-align: center;
 }
 
 html {
