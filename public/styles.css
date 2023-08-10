@@ -34,7 +34,7 @@ html {
 .card {
   border: 1px solid gray;
   border-radius: 15px;
-  width: 350px;
+  width: 300px;
   margin: 10px;
 }
 .card-header {
@@ -77,7 +77,7 @@ input, button, select {
 }
 
 footer {
-  position: fixed;
+  /* position: fixed; */
   bottom: 0;
   border-top: 1px solid;
   width: 100%;
